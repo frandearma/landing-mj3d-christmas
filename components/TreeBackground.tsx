@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import * as T from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment';
-import { introV, markTreeReady, prefersReduced } from '@/lib/scene';
+import { introV, markTreeReady, prefersReduced, weather } from '@/lib/scene';
 
 const hasGL = () => {
   try { const c = document.createElement('canvas'); return !!(c.getContext('webgl') || c.getContext('experimental-webgl')); } catch { return false; }
@@ -63,7 +63,7 @@ export default function TreeBackground() {
     }, undefined, e => { console.warn('árbol', e); markTreeReady(); });
 
     // nieve liviana
-    const N = mobile ? 500 : 1200, sp = new Float32Array(N * 3);
+    const N = mobile ? 900 : 2000, sp = new Float32Array(N * 3);
     for (let i = 0; i < N; i++) sp.set([(Math.random() - .5) * 40, Math.random() * 26, (Math.random() - .5) * 30], i * 3);
     const sg = new T.BufferGeometry(); sg.setAttribute('position', new T.BufferAttribute(sp, 3));
     scene.add(new T.Points(sg, new T.PointsMaterial({ color: 0xffffff, size: mobile ? .09 : .07, transparent: true, opacity: .75, depthWrite: false })));
@@ -118,7 +118,17 @@ export default function TreeBackground() {
       warm.position.set(3, y, d * .6);
       bulbs.forEach((m, j) => (m.emissiveIntensity = 1.6 + Math.sin(t * 2 + j) * .6));
       const sa = sg.attributes.position as T.BufferAttribute;
-      if (!reduce) { for (let j = 0; j < N; j++) { let yy = sa.getY(j) - .02; if (yy < 0) yy = 26; sa.setY(j, yy); } sa.needsUpdate = true; }
+      // el clima decide cuántos copos se dibujan, qué tan rápido caen y cuánto los corre el viento
+      sg.setDrawRange(0, Math.round(N * weather.amount));
+      if (!reduce) {
+        const fall = .02 * weather.speed, drift = .02 * weather.wind;
+        for (let j = 0; j < N; j++) {
+          let yy = sa.getY(j) - fall * (.7 + (j % 7) * .1), xx = sa.getX(j) + drift + Math.sin(t + j) * .004;
+          if (yy < 0) yy = 26; if (xx > 20) xx = -20;
+          sa.setXY(j, xx, yy);
+        }
+        sa.needsUpdate = true;
+      }
       r.render(scene, cam);
     };
     const vis = () => { on = !document.hidden; if (on) { cancelAnimationFrame(raf); loop(); } };

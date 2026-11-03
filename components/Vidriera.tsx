@@ -8,6 +8,7 @@ import { GENERIC, wa } from '@/lib/contact';
 import { track } from '@/lib/track';
 import { prefersReduced } from '@/lib/scene';
 import Card from './Card';
+import Clima from './Clima';
 import Sheet from './Sheet';
 import { Arrow, Chevron, FilterIcon, WaIcon } from './Icons';
 
@@ -198,6 +199,7 @@ export default function Vidriera() {
           <h1 id="t">Navidad, capa por capa</h1>
           <p>Adornos y regalos impresos en 3D en Marcos Juárez. Tocá un producto, elegí el color y consultanos por WhatsApp.</p>
           <div className="row"><a className="btn" href="#catalogo" onClick={e => { e.preventDefault(); toY(document.getElementById('catalogo')!); }}>Ver catálogo</a></div>
+          <Clima />
         </section>
 
         <section className="catalog" aria-labelledby="catTitle">

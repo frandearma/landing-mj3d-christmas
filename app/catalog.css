@@ -191,9 +191,39 @@ footer a:hover{color:var(--cream)}
 .specs dd{margin:0}
 .sh .btn{width:100%}
 
+/* celular: la ficha ocupa casi toda la pantalla y todo entra sin scroll; la foto toma el espacio que sobra */
+@media (max-width:759px){
+  .panel{display:flex;flex-direction:column;height:calc(100svh - 16px - env(safe-area-inset-top,0px));max-height:none;overflow:hidden;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .grip{flex:none}
+  .gal-w{flex:1 1 auto;min-height:0;margin-bottom:12px}
+  .gal{height:100%}
+  .gal img{height:100%;aspect-ratio:auto}
+  .sh{flex:none}
+  .sh h2{font-size:28px}
+  .sh .meta{margin:4px 0 6px}
+  .sh p{margin-bottom:12px;font-size:15px}
+  .pick{margin-bottom:14px}
+  .pick legend{margin-bottom:6px}
+  .opts{gap:6px}
+  .opt{min-height:40px;padding:0 12px 0 8px;font-size:13px}
+  .opt i{width:18px;height:18px}
+}
+
+/* clima: detalle en el inicio que cambia cuánto nieva sobre el árbol */
+.clima{display:flex;align-items:center;gap:12px;margin-top:6px;color:var(--mute);font-size:13px;font-variant-numeric:tabular-nums}
+.clima .now{display:flex;align-items:baseline;gap:8px;min-width:128px}
+.clima .now b{font:600 15px var(--f-body);color:var(--cream)}
+.clima .seg{display:flex;gap:4px}
+.clima button{position:relative;width:28px;height:28px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center}
+.clima button i{display:block;width:18px;height:3px;border-radius:2px;background:rgba(247,243,235,.25);transition:background-color .3s,width .3s}
+.clima button:hover i{background:rgba(247,243,235,.55)}
+.clima button[aria-pressed="true"] i{background:var(--gold);width:24px}
+.clima button:focus-visible{outline:2px solid var(--cream);outline-offset:0;border-radius:6px}
+
 @media (min-width:760px){
   .hero{justify-content:center;padding-left:max(var(--gl),8vw);min-height:calc(100svh - 61px)}
   .hero h1{max-width:11ch;font-size:clamp(56px,7vw,120px)}
+  .hero .clima{margin-top:14px}
   .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
   .catalog,.sec{padding-left:max(var(--gl),8vw);padding-right:max(var(--gr),8vw)}
   .hdr{--px:max(var(--gl),8vw);padding-left:max(var(--gl),8vw);padding-right:max(var(--gr),8vw)}

@@ -1,24 +1,36 @@
-# MJ 3D | Catálogo de Navidad 2026
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Sitio estático (sin build): `index.html`, `core.js`, `tree.json` (árbol 3D) e `img/`.
+## Getting Started
 
-## Para completar antes de publicar al cliente
+First, run the development server:
 
-- **WhatsApp:** `WA_NUMBER` en `core.js` (formato internacional sin `+`, por ejemplo `5493472XXXXXX`).
-- **Google Analytics 4:** `window.GA_ID` en el `<head>` de `index.html` (`G-XXXXXXX`). Vacío = no se carga nada.
-- Nombres, precios y colores de los productos: `PRODUCTS` en `index.html` (hoy son provisorios, precio `null` = "Consultar precio").
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Eventos que se miden
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-| Evento | Cuándo | Datos |
-| --- | --- | --- |
-| `view_item` | se abre la ficha de un producto | `item_id`, `item_name`, `item_category` |
-| `select_color` | se elige un color (ficha o tarjeta) | `item_name`, `color`, `place` |
-| `filter_category` | se filtra una categoría | `category` |
-| `contact_whatsapp` | se toca un botón de WhatsApp | `place`; desde la ficha también `item_name` y `color` |
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-En GA4 conviene marcar `contact_whatsapp` como evento clave y registrar `item_name`, `color` y `place` como dimensiones personalizadas.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Créditos
+## Learn More
 
-Árbol 3D basado en "XMas Tree" de anybody (Sketchfab), CC BY 4.0.
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

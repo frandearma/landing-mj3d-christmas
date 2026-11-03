@@ -199,7 +199,6 @@ export default function Vidriera() {
           <h1 id="t">Navidad, capa por capa</h1>
           <p>Adornos y regalos impresos en 3D en Marcos Juárez. Tocá un producto, elegí el color y consultanos por WhatsApp.</p>
           <div className="row"><a className="btn" href="#catalogo" onClick={e => { e.preventDefault(); toY(document.getElementById('catalogo')!); }}>Ver catálogo</a></div>
-          <Clima />
         </section>
 
         <section className="catalog" aria-labelledby="catTitle">
@@ -248,6 +247,7 @@ export default function Vidriera() {
         <span>© 2026 MJ 3D, Marcos Juárez</span>
         <Link href="/creditos">Créditos</Link>
       </footer>
+      <Clima />
       <a className="fab" href={wa(GENERIC)} target="_blank" rel="noopener" aria-label="Consultar por WhatsApp" onClick={waClick('boton flotante')}><WaIcon /></a>
 
       <Sheet p={cur} open={sheet.open} color={cur ? picks[cur.id] : ''}

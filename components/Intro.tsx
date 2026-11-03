@@ -7,7 +7,7 @@ import { introV, prefersReduced, treeLoaded } from '@/lib/scene';
 
 gsap.registerPlugin(SplitText);
 
-const CHROME = ['.hdr', '.fab'];
+const CHROME = ['.hdr', '.clima', '.fab'];
 
 /* Intro: unas palabras de Navidad que se deshacen en nieve; después se abre la página */
 export default function Intro() {

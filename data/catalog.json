@@ -1,0 +1,255 @@
+{
+  "categorias": [
+    { "id": "colgar", "nombre": "Para colgar" },
+    { "id": "mesa", "nombre": "Para la mesa" },
+    { "id": "deco", "nombre": "Figuras y deco" }
+  ],
+  "colores": {
+    "Blanco": "#f4f0e8",
+    "Crema": "#e9dfcc",
+    "Beige": "#cdb79a",
+    "Verde": "#2e7a5c",
+    "Verde salvia": "#8a9e8c",
+    "Verde agua": "#5fb8a8",
+    "Verde oliva": "#4f5236",
+    "Rojo": "#b83b32",
+    "Bordó": "#7d2a2a",
+    "Gris": "#9a9a96",
+    "Negro": "#262626",
+    "Marrón": "#6b4a33",
+    "Rosa": "#d9a5a0",
+    "Dorado": "#d6b875"
+  },
+  "productos": [
+    {
+      "id": "007",
+      "categoria": "colgar",
+      "nombre": "Esferas acanaladas",
+      "descripcion": "Esferas con líneas verticales y argolla para colgar.",
+      "precio": null,
+      "colores": ["Bordó", "Beige", "Verde salvia"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Bordó": 3, "Beige": 2, "Verde salvia": 1}
+    },
+    {
+      "id": "008",
+      "categoria": "colgar",
+      "nombre": "Gotas acanaladas",
+      "descripcion": "Adorno alargado tipo gota, liviano y con argolla.",
+      "precio": null,
+      "colores": ["Bordó", "Blanco", "Gris", "Verde salvia"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Bordó": 1, "Blanco": 2, "Gris": 1, "Verde salvia": 3}
+    },
+    {
+      "id": "016",
+      "categoria": "colgar",
+      "nombre": "Campanas acanaladas",
+      "descripcion": "Campana con badajo, para el árbol o la puerta.",
+      "precio": null,
+      "colores": ["Verde salvia", "Beige", "Bordó"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Verde salvia": 1, "Beige": 3, "Bordó": 4}
+    },
+    {
+      "id": "017",
+      "categoria": "colgar",
+      "nombre": "Esfera espiral calada",
+      "descripcion": "Esfera calada en espiral que deja pasar la luz.",
+      "precio": null,
+      "colores": ["Rojo", "Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Rojo": 4, "Blanco": 3}
+    },
+    {
+      "id": "019",
+      "categoria": "colgar",
+      "nombre": "Estrellas tejidas",
+      "descripcion": "Estrella con textura de tejido trenzado.",
+      "precio": null,
+      "colores": ["Verde", "Beige", "Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Verde": 2, "Beige": 3, "Blanco": 4}
+    },
+    {
+      "id": "020",
+      "categoria": "colgar",
+      "nombre": "Ángel con corazón",
+      "descripcion": "Angelito blanco con corazón rojo.",
+      "precio": null,
+      "colores": ["Blanco"],
+      "fotos": [1, 2],
+      "fotoPorColor": {}
+    },
+    {
+      "id": "021",
+      "categoria": "colgar",
+      "nombre": "Arbolito colgante",
+      "descripcion": "Arbolito acanalado de tres pisos, con argolla.",
+      "precio": null,
+      "colores": ["Verde salvia", "Beige", "Bordó"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Verde salvia": 4, "Beige": 2, "Bordó": 3}
+    },
+    {
+      "id": "022",
+      "categoria": "colgar",
+      "nombre": "Adornos texturados",
+      "descripcion": "Set de adornos con relieve: esferas, gotas y piñas.",
+      "precio": null,
+      "colores": ["Blanco", "Rosa", "Gris", "Dorado"],
+      "fotos": [1],
+      "fotoPorColor": {}
+    },
+    {
+      "id": "023",
+      "categoria": "colgar",
+      "nombre": "Campanas caladas",
+      "descripcion": "Campana calada, linda con una luz adentro.",
+      "precio": null,
+      "colores": ["Rojo", "Negro", "Crema", "Verde agua"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Rojo": 3, "Negro": 3, "Crema": 2, "Verde agua": 4}
+    },
+    {
+      "id": "001",
+      "categoria": "mesa",
+      "nombre": "Servilletero árbol",
+      "descripcion": "Servilletero con forma de árbol y estrella calada.",
+      "precio": null,
+      "colores": ["Crema", "Verde", "Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Crema": 1, "Verde": 4, "Blanco": 3}
+    },
+    {
+      "id": "002",
+      "categoria": "mesa",
+      "nombre": "Árbol portavela",
+      "descripcion": "Silueta de árbol con lugar para una vela de té.",
+      "precio": null,
+      "colores": ["Beige", "Crema"],
+      "fotos": [1, 2, 3],
+      "fotoPorColor": {"Beige": 2, "Crema": 3}
+    },
+    {
+      "id": "003",
+      "categoria": "mesa",
+      "nombre": "Posavasos copo de nieve",
+      "descripcion": "Set de posavasos con copo en relieve y soporte.",
+      "precio": null,
+      "colores": ["Rojo", "Verde agua"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Rojo": 3, "Verde agua": 4}
+    },
+    {
+      "id": "009",
+      "categoria": "mesa",
+      "nombre": "Portavelas acanalados",
+      "descripcion": "Portavelas bajos para velas de té.",
+      "precio": null,
+      "colores": ["Verde salvia", "Crema", "Gris", "Negro"],
+      "fotos": [1, 2, 3],
+      "fotoPorColor": {"Verde salvia": 2, "Crema": 1, "Gris": 2, "Negro": 3}
+    },
+    {
+      "id": "013",
+      "categoria": "mesa",
+      "nombre": "Portavela reno",
+      "descripcion": "Reno con hueco para una vela de té.",
+      "precio": null,
+      "colores": ["Blanco", "Beige", "Marrón"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Blanco": 4, "Beige": 3, "Marrón": 1}
+    },
+    {
+      "id": "018",
+      "categoria": "mesa",
+      "nombre": "Servilleteros navideños",
+      "descripcion": "Aros para servilleta: reno, regalo, estrella y más.",
+      "precio": null,
+      "colores": ["Rojo", "Verde agua", "Beige"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Rojo": 1, "Verde agua": 3, "Beige": 2}
+    },
+    {
+      "id": "004",
+      "categoria": "deco",
+      "nombre": "Renos rayados",
+      "descripcion": "Renos de cuerpo acanalado para la mesa o un estante.",
+      "precio": null,
+      "colores": ["Verde salvia", "Beige", "Bordó", "Blanco"],
+      "fotos": [1, 2, 3],
+      "fotoPorColor": {"Verde salvia": 2, "Beige": 1, "Bordó": 2, "Blanco": 3}
+    },
+    {
+      "id": "005",
+      "categoria": "deco",
+      "nombre": "Gnomos nórdicos",
+      "descripcion": "Gnomos de nariz redonda y gorro largo.",
+      "precio": null,
+      "colores": ["Beige", "Verde oliva"],
+      "fotos": [1, 2, 4],
+      "fotoPorColor": {"Beige": 1, "Verde oliva": 2}
+    },
+    {
+      "id": "006",
+      "categoria": "deco",
+      "nombre": "Árboles acanalados",
+      "descripcion": "Árboles de pisos con líneas verticales.",
+      "precio": null,
+      "colores": ["Crema", "Gris", "Verde", "Marrón", "Negro"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Crema": 2, "Gris": 1, "Verde": 3, "Marrón": 4, "Negro": 4}
+    },
+    {
+      "id": "010",
+      "categoria": "deco",
+      "nombre": "Árbol farol calado",
+      "descripcion": "Árbol con calados para poner una vela adentro.",
+      "precio": null,
+      "colores": ["Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {}
+    },
+    {
+      "id": "011",
+      "categoria": "deco",
+      "nombre": "Muñeco de nieve",
+      "descripcion": "Muñeco con galera y bufanda.",
+      "precio": null,
+      "colores": ["Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {}
+    },
+    {
+      "id": "012",
+      "categoria": "deco",
+      "nombre": "Papá Noel nórdico",
+      "descripcion": "Papá Noel alto, de barba larga y gorro.",
+      "precio": null,
+      "colores": ["Verde salvia", "Marrón"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Verde salvia": 1, "Marrón": 2}
+    },
+    {
+      "id": "014",
+      "categoria": "deco",
+      "nombre": "Árbol de ondas",
+      "descripcion": "Árbol de formas redondeadas apiladas.",
+      "precio": null,
+      "colores": ["Crema", "Verde salvia"],
+      "fotos": [1, 2],
+      "fotoPorColor": {"Crema": 1, "Verde salvia": 2}
+    },
+    {
+      "id": "015",
+      "categoria": "deco",
+      "nombre": "Árbol de capas",
+      "descripcion": "Cono de capas finas, se nota cada capa impresa.",
+      "precio": null,
+      "colores": ["Verde oliva", "Rojo"],
+      "fotos": [1, 2, 3],
+      "fotoPorColor": {"Verde oliva": 2, "Rojo": 3}
+    }
+  ]
+}

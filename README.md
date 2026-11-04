@@ -1,3 +1,16 @@
+## Catálogo
+
+Los productos, categorías, colores y precios están en `data/catalog.json`.
+
+- `precio`: número sin puntos ni signo (`8500` se muestra como $ 8.500). `null` muestra "Consultar precio".
+- `fotos`: números de foto del producto; `[1, 2]` usa `public/img/001-1.webp` y `001-2.webp` (y sus versiones `-c` para la card).
+- `fotoPorColor`: qué foto se muestra al elegir cada color.
+- `colores`: cada nombre tiene que estar en la lista `colores` de arriba, con su tono.
+
+Al subir el cambio a `main`, Vercel publica solo.
+
+Variables de entorno: `NEXT_PUBLIC_WHATSAPP_NUMBER` y `NEXT_PUBLIC_GA_ID`.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

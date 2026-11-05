@@ -96,6 +96,10 @@ export default function Sheet({ p, open, color, onColor, onClose }: Props) {
                     <button key={c} className="opt" aria-pressed={c === color} onClick={() => onColor(c)}><i style={{ background: COLORS[c] }} />{c}</button>
                   ))}
                 </div>
+                &nbsp;
+                  <legend>
+                  <i>*Consulta por medidas y otros colores</i>
+                  </legend>
               </fieldset>
               <a className="btn" href={wa(msg(p.id, p.name, color))} target="_blank" rel="noopener"
                 onClick={() => track('contact_whatsapp', { place: 'ficha', item_id: p.id, item_name: p.name, color })}>

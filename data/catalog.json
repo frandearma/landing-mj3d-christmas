@@ -176,7 +176,7 @@
       "categoria": "colgar",
       "nombre": "Campanas acanaladas",
       "descripcion": "Campana con badajo, para el árbol o la puerta.",
-      "precio": null,
+      "precio": 3500,
       "colores": ["Verde militar", "Tan", "Bordó"],
       "fotos": [1, 2, 3, 4],
       "fotoPorColor": {"Verde militar": 1, "Tan": 3, "Bordó": 4}

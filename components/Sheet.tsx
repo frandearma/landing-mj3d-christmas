@@ -97,7 +97,7 @@ export default function Sheet({ p, open, color, onColor, onClose }: Props) {
                   ))}
                 </div>
               </fieldset>
-              <a className="btn" href={wa(msg(p.name, color))} target="_blank" rel="noopener"
+              <a className="btn" href={wa(msg(p.id, p.name, color))} target="_blank" rel="noopener"
                 onClick={() => track('contact_whatsapp', { place: 'ficha', item_id: p.id, item_name: p.name, color })}>
                 <WaIcon />Consultar por WhatsApp
               </a>

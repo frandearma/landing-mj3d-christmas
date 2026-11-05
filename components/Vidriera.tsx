@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { gsap } from 'gsap';
 import { CATS, PRODUCTS, catName, type Product } from '@/lib/catalog';
 import { GENERIC, wa } from '@/lib/contact';
@@ -50,17 +51,15 @@ export default function Vidriera() {
       const on = a.top <= h + 100 && b.bottom > h + 120;
       setInCat(on); if (!on) setDdOpen(false);
     };
-    // en captura: también se entera si el que scrollea es otro contenedor; y un chequeo liviano por si se pierde algún evento
     document.addEventListener('scroll', check, { passive: true, capture: true }); addEventListener('resize', check);
     const iv = setInterval(check, 250); check();
     return () => { document.removeEventListener('scroll', check, { capture: true }); removeEventListener('resize', check); clearInterval(iv); };
   }, []);
 
-  /* ===== Entradas: tarjetas y textos suben al entrar en pantalla, igual en celular y en compu ===== */
-  // IntersectionObserver en vez de posiciones precalculadas: si la página cambia de alto (filtros, fotos) no se desfasa
+  /* ===== Entradas: tarjetas y textos suben al entrar en pantalla ===== */
   useEffect(() => {
     if (prefersReduced()) return;
-    gsap.ticker.lagSmoothing(0); // en equipos lentos las entradas terminan a tiempo en vez de ir en cámara lenta
+    gsap.ticker.lagSmoothing(0);
     const groups: [string, gsap.TweenVars][] = [
       ['.card', { y: 40, duration: .7, stagger: .07 }],
       ['.cat-head > *, .sec-head > *, .custom-box > *, .steps li', { y: 26, duration: .8, stagger: .09 }],
@@ -79,7 +78,7 @@ export default function Vidriera() {
     return () => ios.forEach(io => io.disconnect());
   }, []);
 
-  // al cambiar de categoría, las tarjetas que quedan a la vista se reparten de nuevo
+  // al cambiar de categoría, las tarjetas a la vista se reparten de nuevo
   const firstCat = useRef(true);
   useEffect(() => {
     if (firstCat.current) { firstCat.current = false; return; }
@@ -100,7 +99,6 @@ export default function Vidriera() {
     track('view_item', { item_id: p.id, item_name: p.name, item_category: catName(p.cat) });
   }, []);
 
-  // producto elegido en el menú: va al catálogo filtrado por su categoría, lo marca y abre su ficha
   const goTo = (id: string) => {
     setCat(byId(id).cat, false);
     setTimeout(() => {
@@ -123,7 +121,7 @@ export default function Vidriera() {
     setPicks(s => ({ ...s, [id]: c }));
   };
 
-  /* ===== Menús: panel del catálogo (compu) y desplegable del filtro ===== */
+  /* ===== Menús y accesibilidad ===== */
   const megaLater = () => { clearTimeout(megaT.current); megaT.current = setTimeout(() => setMega(false), 220); };
   useEffect(() => {
     const out = (e: MouseEvent) => {
@@ -143,7 +141,16 @@ export default function Vidriera() {
   return (
     <>
       <header className={`hdr${inCat ? ' in-cat' : ''}`}>
-        <a className="logo" href="#inicio">MJ 3D</a>
+        <a className="logo" href="#inicio">
+          <Image
+            src="/img/logo.png"
+            alt="MJ 3D Logo"
+            width={120}
+            height={48}
+            priority
+            style={{ width: 'auto', height: 'auto', maxHeight: '48px' }}
+          />
+        </a>
         <nav className="mnav" aria-label="Principal">
           <button className="mlink" id="mBtn" ref={mBtn} aria-expanded={mega} aria-controls="mega"
             onMouseEnter={() => { clearTimeout(megaT.current); setMega(true); }} onMouseLeave={megaLater}
@@ -197,7 +204,7 @@ export default function Vidriera() {
         <section className="hero" aria-labelledby="t">
           <span className="eyebrow">Catálogo Navidad 2026</span>
           <h1 id="t">Navidad, capa por capa</h1>
-          <p>Adornos y regalos impresos en 3D en Marcos Juárez. Tocá un producto, elegí el color y consultanos por WhatsApp.</p>
+          <p>Adornos y regalos impresos en 3D. Tocá un producto, elegí el color y consultanos por WhatsApp.</p>
           <div className="row"><a className="btn" href="#catalogo" onClick={e => { e.preventDefault(); toY(document.getElementById('catalogo')!); }}>Ver catálogo</a></div>
         </section>
 
@@ -244,7 +251,7 @@ export default function Vidriera() {
       </main>
 
       <footer>
-        <span>© 2026 MJ 3D, Marcos Juárez</span>
+        <span>© 2026 Marcos Juárez 3D</span>
         <Link href="/creditos">Créditos</Link>
       </footer>
       <Clima />

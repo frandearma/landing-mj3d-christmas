@@ -9,7 +9,7 @@ const onest = Onest({ variable: '--font-onest', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
-  title: 'MJ 3D | Catálogo de Navidad 2026',
+  title: 'Marcos Juárez 3D | Catálogo de Navidad 2026',
   description: 'Adornos y regalos de Navidad impresos en 3D en Marcos Juárez. Elegí el producto y el color y consultanos por WhatsApp.',
   openGraph: { title: 'MJ 3D | Catálogo de Navidad 2026', description: 'Adornos y regalos de Navidad impresos en 3D en Marcos Juárez.', locale: 'es_AR', type: 'website' },
 };

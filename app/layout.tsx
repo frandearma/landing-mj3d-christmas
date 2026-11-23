@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Analytics } from "@vercel/analytics/next"
 import { Bricolage_Grotesque, Onest } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="es" className={`${bricolage.variable} ${onest.variable}`}>
       <body>{children}</body>
+      <Analytics />
       {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );

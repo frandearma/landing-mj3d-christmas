@@ -18,7 +18,8 @@
     "Negro": "#262626",
     "Marrón": "#6b4a33",
     "Rosa": "#d9a5a0",
-    "Dorado": "#999966"
+    "Dorado": "#999966",
+    "Capibara": "#9E7B5F"
   },
   "productos": [
     {
@@ -340,6 +341,186 @@
       "colores": ["Rojo", "Verde", "Piedra", "Tan"],
       "fotos": [1],
       "fotoPorColor": {"Rojo": 1, "Verde": 1,  "Piedra": 1, "Tan": 1}
+    },
+    {
+      "id": "033",
+      "categoria": "deco",
+      "nombre": "Pesebre minimalista",
+      "descripcion": "Celebra el verdadero significado de la Navidad con elegancia y serenidad a través de este Belén minimalista y escultórico .",
+      "precio": 10000,
+      "colores": ["Capibara"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Capibara": 1}
+    },
+    {
+      "id": "034",
+      "categoria": "deco",
+      "nombre": "Papá Noel Crochet",
+      "descripcion": "¡Añade un toque de magia navideña a tu colección impresa en 3D con esta encantadora figurita de Papá Noel! Dimensiones: Altura: 8,5 cm Ancho: 5 cm",
+      "precio": 5000,
+      "colores": ["Rojo"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Rojo": 1}
+    },
+    {
+      "id": "035",
+      "categoria": "deco",
+      "nombre": "Perrito Navideño Crochet",
+      "descripcion": "¡Añade un toque de magia navideña a tu colección impresa en 3D con esta encantadora figurita de Perrito Navideño! Dimensiones: Altura: 8,5 cm Ancho: 5 cm",
+      "precio": 5000,
+      "colores": ["Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Blanco": 1}
+    },
+    {
+      "id": "036",
+      "categoria": "deco",
+      "nombre": "Kit x 3 Renos Navideños Crochet",
+      "descripcion": "Kit x 3 unidades.",
+      "precio": 10000,
+      "colores": ["Verde","Marrón","Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Verde": 1,"Marrón": 4, "Blanco": 3}
+    },
+    {
+      "id": "037",
+      "categoria": "deco",
+      "nombre": "Muñeco de Nieve Crochet",
+      "descripcion": "¡Añade un toque de magia navideña a tu colección impresa en 3D con esta encantadora figurita de Muñeco de nieve Navideño! Dimensiones: Altura: 8,5 cm Ancho: 6,5 cm",
+      "precio": 5000,
+      "colores": ["Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Blanco": 1}
+    },
+    {
+      "id": "038",
+      "categoria": "deco",
+      "nombre": "Renos Navideños Crochet",
+      "descripcion": "Un encantador renocito inspirado en el amigurumi de ganchillo, perfecto como decoración navideña, un pequeño regalo artesanal o un compañero festivo para el escritorio.\n\nEl modelo presenta una hermosa textura inspirada en el ganchillo, adorables ojos negros, una nariz roja brillante y unos simpáticos cuernos ramificados.",
+      "precio": 5000,
+      "colores": ["Capibara"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Capibara":1}
+    },
+    {
+      "id": "039",
+      "categoria": "deco",
+      "nombre": "Oso Polar Crochet",
+      "descripcion": "¡Conoce a tu nuevo compañero de vacaciones!\n\nEste adorable oso polar navideño con aspecto de tejido de punto es una encantadora decoración impresa en 3D. Presenta una textura que imita la tela de punto, un gorro de Papá Noel festivo y pequeños detalles encantadores.\n\nEs perfecto como decoración navideña, un pequeño regalo o un bonito complemento para tu colección navideña.",
+      "precio": 5000,
+      "colores": ["Blanco"],
+      "fotos": [1, 2, 3, 4],
+      "fotoPorColor": {"Blanco":1}
+    },
+    {
+      "id": "040",
+      "categoria": "colgar",
+      "nombre": "Kit x 3 Esferas navideñas modernas",
+      "descripcion": "¡Dale un toque moderno y elegante a tu árbol de Navidad estas fiestas con este exclusivo trío de adornos imprimibles en 3D!\n\nEsta colección incluye tres diseños completamente únicos y de alta calidad.",
+      "precio": 5000,
+      "colores": ["Dorado", "Rojo"],
+      "fotos": [1,2],
+      "fotoPorColor": {"Dorado": 1, "Rojo": 2}
+    },
+    {
+      "id": "041",
+      "categoria": "colgar",
+      "nombre": "Esferas navideñas Acolchada",
+      "descripcion": "\uD83D\uDCCF Altura: 6,5 cm (65 mm)\n\n\uD83D\uDC8E Elegante patrón de rombos acolchados\n\n✨ Detalles decorativos en relieve para un aspecto prémium\n\n\uD83C\uDF84 Perfecto para árboles de Navidad y decoraciones festivas.\n\n\uD83C\uDFE1 Ideal para decoración navideña moderna, clásica y escandinava.\n\n\uD83C\uDFA8 Ideal para experimentar con diferentes colores de filamento.",
+      "precio": 2000,
+      "colores": ["Chocolate", "Tan", "Blanco"],
+      "fotos": [1,2,3,4],
+      "fotoPorColor": {"Chocolate": 2, "Tan": 3, "Blanco": 4}
+    },
+    {
+      "id": "042",
+      "categoria": "colgar",
+      "nombre": "Estrella de Navidad Crochet - Adorno para el árbol de Navidad",
+      "descripcion": "¡Dale a tu árbol de Navidad un toque acogedor y artesanal con esta preciosa estrella de punto para la punta del árbol!\nDiseñada con intrincadas texturas de punto, bordes trenzados y un lazo decorativo con pequeños detalles de bayas, esta estrella aporta una sensación cálida y festiva a tu decoración navideña.\n ",
+      "precio": 6000,
+      "colores": ["Rojo", "Dorado"],
+      "fotos": [1,2,3,4],
+      "fotoPorColor": {"Rojo": 1, "Dorado": 3}
+    },
+    {
+      "id": "043",
+      "categoria": "colgar",
+      "nombre": "Estrella de Super Mario - Adorno para el árbol de Navidad",
+      "descripcion": "¡Lleva la magia del Reino Champiñón a tus celebraciones navideñas con nuestro nuevo y mejorado adorno para árbol de Navidad con forma de estrella de Super Mario! Inspirado en la icónica estrella de Mario 64, este hermoso diseño iluminará tu árbol y tu espíritu navideño. ¡Muchas gracias a la comunidad de Makerworld por sus comentarios, que hicieron posible este nuevo y mejorado diseño!",
+      "precio": 15000,
+      "colores": ["Dorado"],
+      "fotos": [1,2,3],
+      "fotoPorColor": {"Dorado": 1}
+    },
+    {
+      "id": "044",
+      "categoria": "deco",
+      "nombre": "Pesebre estilo Crochet",
+      "descripcion": "Escena de la Natividad estilo crochet. Dimensión aproximada: 10cm de alto",
+      "precio": 15000,
+      "colores": [],
+      "fotos": [1,2],
+      "fotoPorColor": {}
+    },
+    {
+      "id": "045",
+      "categoria": "colgar",
+      "nombre": "Adorno navideño Snitch Harry Potter",
+      "descripcion": "Adorno navideño Snitch Harry Potter",
+      "precio": 3000,
+      "colores": ["Dorado"],
+      "fotos": [1,2],
+      "fotoPorColor": {"Dorado": 1}
+    },
+    {
+      "id": "046",
+      "categoria": "mesa",
+      "nombre": "Servilletero navideño",
+      "descripcion": "¡Añade un toque de magia navideña a tu mesa festiva con este servilletero navideño decorativo!\n\nCon un precioso diseño festivo que incluye un árbol de Navidad, estrellas, renos y regalos, este servilletero es a la vez un accesorio práctico y una encantadora decoración navideña.\n\n✨",
+      "precio": 6000,
+      "colores": ["Blanco"],
+      "fotos": [1,2],
+      "fotoPorColor": {"Blanco": 1}
+    },
+    {
+      "id": "047",
+      "categoria": "mesa",
+      "nombre": "Servilletero navideño",
+      "descripcion": "¡Añade un toque de magia navideña a tu mesa festiva con este servilletero navideño decorativo!\n\nCon un precioso diseño festivo que incluye un árbol de Navidad, estrellas, renos y regalos, este servilletero es a la vez un accesorio práctico y una encantadora decoración navideña.\n\n✨",
+      "precio": 5000,
+      "colores": ["Blanco","Rojo"],
+      "fotos": [1,2],
+      "fotoPorColor": {"Blanco": 1,"Rojo": 2}
+    },
+    {
+      "id": "048",
+      "categoria": "deco",
+      "nombre": "Arbol de Navidad Crochet",
+      "descripcion": "¡Conoce a tu nuevo compañero de vacaciones!\n\nEste adorable árbol navideño con aspecto de tejido de punto es una encantadora decoración impresa en 3D. Presenta una textura que imita la tela de punto.\n\nEs perfecto como decoración navideña, un pequeño regalo o un bonito complemento para tu colección navideña.",
+      "precio": 5000,
+      "colores": ["Verde"],
+      "fotos": [1, 2],
+      "fotoPorColor": {"Verde":1}
+    },
+    {
+      "id": "049",
+      "categoria": "deco",
+      "nombre": "Arbol de Navidad",
+      "descripcion": "",
+      "precio": 5000,
+      "colores": ["Verde", "Verde militar"],
+      "fotos": [1, 2,3,4],
+      "fotoPorColor": {"Verde":1, "Verde militar": 2}
+    },
+    {
+      "id": "050",
+      "categoria": "deco",
+      "nombre": "Set Navideño",
+      "descripcion": "Set Navideño, armalo a tu gusto. Incluye Bandeja + 3 figuras (Papa Noel, Oso polar, Reno, Arbol, etc)",
+      "precio": 20000,
+      "colores": [],
+      "fotos": [1],
+      "fotoPorColor": {}
     }
   ]
 }

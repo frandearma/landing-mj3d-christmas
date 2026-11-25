@@ -521,6 +521,16 @@
       "colores": [],
       "fotos": [1],
       "fotoPorColor": {}
+    },
+    {
+      "id": "051",
+      "categoria": "deco",
+      "nombre": "Arbol de Navidad Crochet",
+      "descripcion": "",
+      "precio": 5000,
+      "colores": ["Verde", "Verde militar"],
+      "fotos": [1,2,3,4],
+      "fotoPorColor": {"Verde militar": 1,"Verde":4 }
     }
   ]
 }

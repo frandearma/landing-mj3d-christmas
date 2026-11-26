@@ -496,7 +496,7 @@
       "id": "048",
       "categoria": "deco",
       "nombre": "Arbol de Navidad Crochet",
-      "descripcion": "¡Conoce a tu nuevo compañero de vacaciones!\n\nEste adorable árbol navideño con aspecto de tejido de punto es una encantadora decoración impresa en 3D. Presenta una textura que imita la tela de punto.\n\nEs perfecto como decoración navideña, un pequeño regalo o un bonito complemento para tu colección navideña.",
+      "descripcion": "Presenta una textura que imita la tela de punto.\n\nEs perfecto como decoración navideña, un pequeño regalo o un bonito complemento para tu colección navideña.",
       "precio": 5000,
       "colores": ["Verde"],
       "fotos": [1, 2],
@@ -526,11 +526,31 @@
       "id": "051",
       "categoria": "deco",
       "nombre": "Arbol de Navidad Crochet",
-      "descripcion": "",
+      "descripcion": "Presenta una textura que imita la tela de punto.\n\nEs perfecto como decoración navideña, un pequeño regalo o un bonito complemento para tu colección navideña.",
       "precio": 5000,
       "colores": ["Verde", "Verde militar"],
       "fotos": [1,2,3,4],
       "fotoPorColor": {"Verde militar": 1,"Verde":4 }
+    },
+    {
+      "id": "052",
+      "categoria": "deco",
+      "nombre": "Angel de navidad (12cm)",
+      "descripcion": "8 diseños distintos de Elaina Angel y cada uno se proporciona en dos tamaños (10 cm y 12 cm de altura)",
+      "precio": 7500,
+      "colores": ["Blanco", "Tan"],
+      "fotos": [1,2,3,4],
+      "fotoPorColor": {"Blanco": 1,"Tan":4 }
+    },
+    {
+      "id": "053",
+      "categoria": "colgar",
+      "nombre": "Adorno navideño Crochet",
+      "descripcion": "Kit x 3 adornos navideño estilo tejido Crochet",
+      "precio": 3000,
+      "colores": ["Blanco","Verde Kriptonita", "Rojo"],
+      "fotos": [1,2,3,4],
+      "fotoPorColor": {"Blanco":  1,"Verde Kriptonita" : 3, "Rojo" :  4}
     }
   ]
 }
